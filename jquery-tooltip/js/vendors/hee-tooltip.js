@@ -16,9 +16,10 @@
 
             $('.my_tooltip').each(function(index){
 
-                var tooltip = $(this).attr('data-title');
+                //var tooltip = $(this).attr('data-title');
 
-                $(this).append('<span class="message message' + index + '">'+ tooltip +'</span>');
+                //$(this).append('<span class="message message' + index + '">'+ tooltip +'</span>');
+                $(this).append('<span class="message message' + index + '"></span>');
 			
                 $(this).hover(function(e){
                 
