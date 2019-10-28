@@ -4,7 +4,7 @@
      
     //Set the option
     var settings = $.extend({
-		backgroundColor : '#0b21ee',
+        backgroundColor : '#0b21ee',
 		color: '#fff'
       // anotherOption: "string option",
     },options);
@@ -12,33 +12,31 @@
     // Start your custom code
     return this.each(function(){
          
-      var $this = $(this);
+        var $this = $(this);
 
-	  $('.my_tooltip').each(function(index){
+        $('.my_tooltip').each(function(index){
 
-			var tooltip = $(this).attr('data-title');
+            var tooltip = $(this).attr('data-title');
 
-			$(this).append('<span class="message message' + index + '">'+ tooltip +'</span>');
+            $(this).append('<span class="message message' + index + '">'+ tooltip +'</span>');
 			
-
-			$(this).hover(function(e){
-
-				var url = $(this).attr('href');
-
-				
-					$.get(url,function(ajaxResult){
-
-						var ajaxTitle = $(ajaxResult).filter('meta[property="og:title"]').attr('content');
-						var ajaxDesc = $(ajaxResult).filter('meta[property="og:description"]').attr('content');
-						var ajaxImg = $(ajaxResult).filter('meta[property="og:image"]').attr('content');
+            $(this).hover(function(e){
+                
+                var url = $(this).attr('href');
+                
+                $.get(url,function(ajaxResult){
+                    
+                    var ajaxTitle = $(ajaxResult).filter('meta[property="og:title"]').attr('content');
+					var ajaxDesc = $(ajaxResult).filter('meta[property="og:description"]').attr('content');
+					var ajaxImg = $(ajaxResult).filter('meta[property="og:image"]').attr('content');
 						
-						var ajaxHtml = '<img src="'+ajaxImg+'">'
-						ajaxHtml += '<h2>'+ajaxTitle+'</h2>'
-						ajaxHtml += '<p>'+ajaxDesc+'</p>'
+					var ajaxHtml = '<img src="'+ajaxImg+'">'
+					ajaxHtml += '<h2>'+ajaxTitle+'</h2>'
+					ajaxHtml += '<p>'+ajaxDesc+'</p>'
 
-						$('.message' + index).html(ajaxHtml);
+					$('.message' + index).html(ajaxHtml);
 							
-					});
+				});
 			
 
 				var x = e.pageX;
