@@ -10,7 +10,7 @@
     },options);
          
     // Start your custom code
-    return this.each(function(){
+	return this.each(function(){
          
         var $this = $(this);
 
@@ -27,7 +27,7 @@
                 $.get(url,function(ajaxResult){
                     
                     var ajaxTitle = $(ajaxResult).filter('meta[property="og:title"]').attr('content');
-					var ajaxDesc = $(ajaxResult).filter('meta[property="og:description"]').attr('content');
+                    var ajaxDesc = $(ajaxResult).filter('meta[property="og:description"]').attr('content');
 					var ajaxImg = $(ajaxResult).filter('meta[property="og:image"]').attr('content');
 						
 					var ajaxHtml = '<img src="'+ajaxImg+'">'
