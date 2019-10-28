@@ -15,13 +15,14 @@ jQuery(function($) {
 hee_tooltip();
 
 function hee_tooltip(){
+	
+    $('.default').hee_tooltip();
 
-    $('.my_tooltip.custom').hee_tooltip({
+    $('.custom').hee_tooltip({
         backgroundColor: '#e9e9e9',
         color: '#0b21ee'
     });
 	
-    $('.my_tooltip.default').hee_tooltip();
 }
 	
 })
