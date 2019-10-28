@@ -14,12 +14,13 @@
          
             var $this = $(this);
 
-            $('.my_tooltip').each(function(index){
+            $(this).each(function(index){
 
                 //var tooltip = $(this).attr('data-title');
 
                 //$(this).append('<span class="message message' + index + '">'+ tooltip +'</span>');
                 $(this).append('<span class="message message' + index + '"></span>');
+				console.log($(this));
 			
                 $(this).hover(function(e){
                 
@@ -42,7 +43,7 @@
                     var x = e.pageX;
                     var y = e.pageY;
     
-                    $('.message').css({
+                    $('.message' + index).css({
                         'top' : e.pageY + 10,
                         'left' : e.pageX + 10,
                         backgroundColor: settings.backgroundColor,
