@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '144147769537342');
+        fbq('track', 'PageView');
+        fbq('track', 'ViewContent');
+    </script>
+        <!-- End Facebook Pixel Code -->
+
+        <title>랑벨 화장품 홈페이지 (반응형웹) 구축 사례 | 스튜디오 제이티</title>
+    <meta name="description" content="천연화장품 랑벨의 공식 홈페이지를 반응형웹 워드프레스 맞춤테마로 개발한 사례를 소개 합니다." />
+    <meta name="keywords" content="스튜디오 제이티" />
+	            <meta property="og:locale" content="ko_KR"/>
+            <meta property="og:site_name" content="스튜디오 제이티"/>
+            <meta property="og:url" content="https://studio-jt.co.kr/projects/랑벨-반응형웹-구축-사례/"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:title" content="랑벨 화장품 홈페이지 (반응형웹) 구축 사례 | 스튜디오 제이티">
+            <meta property="og:description" content="천연화장품 랑벨의 공식 홈페이지를 반응형웹 워드프레스 맞춤테마로 개발한 사례를 소개 합니다.">
+            <meta property="og:image" content="https://studio-jt.co.kr/file/2017/10/lanbelle-list.png"/>
+
+            
+                        <meta name="twitter:title" content="랑벨 화장품 홈페이지 (반응형웹) 구축 사례 | 스튜디오 제이티"/>
+            <meta name="twitter:description" content="천연화장품 랑벨의 공식 홈페이지를 반응형웹 워드프레스 맞춤테마로 개발한 사례를 소개 합니다."/>
+            <meta name="twitter:image" content="https://studio-jt.co.kr/file/2017/10/lanbelle-list.png"/>
+
+            <link rel='stylesheet' id='JTPOP-popup-show-css'  href='https://studio-jt.co.kr/mod/b6b6f5b8/css/jt-popup-show.css?ver=1.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='JTPOP-font-awesome-css'  href='https://studio-jt.co.kr/mod/b6b6f5b8/css/font-awesome.min.css?ver=4.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='font-css'  href='https://studio-jt.co.kr/skin/css/font.css?ver=1.3.28' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href='https://studio-jt.co.kr/skin/css/vendors/popup/magnific-popup.css?ver=1.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-motion-css'  href='https://studio-jt.co.kr/skin/css/vendors/popup/magnific-popup-motion.css?ver=1.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='icheck-css'  href='https://studio-jt.co.kr/skin/css/vendors/icheck/minimal.css?ver=1.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='selectric-css'  href='https://studio-jt.co.kr/skin/css/vendors/select/selectric.css?ver=1.11.0' type='text/css' media='all' />
+<link rel='stylesheet' id='reset-css'  href='https://studio-jt.co.kr/skin/css/reset.css?ver=1.3.28' type='text/css' media='all' />
+<link rel='stylesheet' id='layout-css'  href='https://studio-jt.co.kr/skin/css/layout.css?ver=1.3.28' type='text/css' media='all' />
+<link rel='stylesheet' id='jt-strap-css'  href='https://studio-jt.co.kr/skin/css/jt-strap.css?ver=1.3.28' type='text/css' media='all' />
+<link rel='stylesheet' id='component-css'  href='https://studio-jt.co.kr/skin/css/component.css?ver=1.3.28' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='https://studio-jt.co.kr/skin/main.css?ver=1.3.28' type='text/css' media='all' />
+<link rel='stylesheet' id='main-css'  href='https://studio-jt.co.kr/skin/css/main.css?ver=1.3.28' type='text/css' media='all' />
+<link rel='stylesheet' id='sub-jun-css'  href='https://studio-jt.co.kr/skin/css/sub-jun.css?ver=1.3.28' type='text/css' media='all' />
+<link rel='stylesheet' id='sub-bin-css'  href='https://studio-jt.co.kr/skin/css/sub-bin.css?ver=1.3.28' type='text/css' media='all' />
+<link rel='stylesheet' id='sub-kms-css'  href='https://studio-jt.co.kr/skin/css/sub-kms.css?ver=1.3.28' type='text/css' media='all' />
+<link rel='stylesheet' id='sub-nico-css'  href='https://studio-jt.co.kr/skin/css/sub-nico.css?ver=1.3.28' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-css'  href='https://studio-jt.co.kr/skin/css/responsive.css?ver=1.3.28' type='text/css' media='all' />
+<!--[if lte IE 8]>
+<link rel='stylesheet' id='ie8-css'  href='https://studio-jt.co.kr/skin/css/ie8.css?ver=1.3.28' type='text/css' media='all' />
+<![endif]-->
+<!--[if lte IE 9]>
+<link rel='stylesheet' id='ie9-css'  href='https://studio-jt.co.kr/skin/css/ie9.css?ver=1.3.28' type='text/css' media='all' />
+<![endif]-->
+<script>if (document.location.protocol != "https:") {document.location = document.URL.replace(/^http:/i, "https:");}</script><script type='text/javascript' src='https://studio-jt.co.kr/lib/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/lib/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/html5shiv.min.js?ver=3.7.3'></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/selectivizr-min.js?ver=1.0.2'></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/respond.min.js?ver=1.4.2'></script>
+<![endif]-->
+<link rel="canonical" href="https://studio-jt.co.kr/projects/랑벨-반응형웹-구축-사례/" />
+<link rel="amphtml" href="https://studio-jt.co.kr/projects/랑벨-반응형웹-구축-사례/amp/"><style type="text/css" id="syntaxhighlighteranchor"></style>
+<link rel="icon" href="https://studio-jt.co.kr/file/2017/03/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://studio-jt.co.kr/file/2017/03/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://studio-jt.co.kr/file/2017/03/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://studio-jt.co.kr/file/2017/03/cropped-favicon-270x270.png" />
+</head>
+<body data-rsssl=1 class="projects-template-default single single-projects postid-690405">
+
+    <div class="global_container">
+        <header id="header">
+            <div class="header_inner">
+                <h1 id="logo">
+                    <a href="https://studio-jt.co.kr" title="홈으로 이동">
+                        <span class="logo_primary" data-svg="https://studio-jt.co.kr/skin/images/layout/logo.svg">
+                            <img src="https://studio-jt.co.kr/skin/images/layout/logo.png" alt="스튜디오 제이티"/>
+                        </span>
+                        <span class="logo_secondary" data-svg="https://studio-jt.co.kr/skin/images/layout/logo-secondary.svg">
+                             <img src="https://studio-jt.co.kr/skin/images/layout/logo-secondary.png" alt="스튜디오 제이티"/>
+                        </span>
+                        <span class="logo_sticky" data-svg="https://studio-jt.co.kr/skin/images/layout/logo-sticky.svg">
+                             <img src="https://studio-jt.co.kr/skin/images/layout/logo-sticky.png" alt="스튜디오 제이티"/>
+                        </span>
+						<span class="logo_text">스튜디오 제이티</span>
+                    </a>
+                </h1><!-- #logo -->
+
+                <div class="header_typo">
+                    <span>we</span>
+                    <i class="heart_beat" data-svg="https://studio-jt.co.kr/skin/images/icon/icon-heart.svg"><img src="https://studio-jt.co.kr/skin/images/icon/icon-heart.png" alt="love" /></i>
+                                        <span id="we_love">LANBELLE</span>
+                </div><!-- .header_typo -->
+
+                <div id="small_menu_overlay"></div>
+                <div id="small_menu_btn_wrap">
+                    <button type="button" class="small_menu_btn" id="small_menu_btn">
+                        <span class="small_menu_btn_text_wrap">
+                            <span class="small_menu_btn_text small_menu_btn_text_open">MENU</span>
+                            <span class="small_menu_btn_text small_menu_btn_text_close">CLOSE</span>
+                        </span>
+                        <span class="small_menu_btn_line_wrap">
+                            <span class="small_menu_btn_line small_menu_btn_line_01"></span>
+                            <span class="small_menu_btn_line small_menu_btn_line_02"></span>
+                            <span class="small_menu_btn_line small_menu_btn_line_03"></span>
+                        </span>
+                    </button>
+                </div>
+
+                <nav class="menu_container">
+                    <div class="menu_container_inner">
+                        <ul id="menu" class="menu"><li id="menu-item-687056" class="menu-item menu-item-type-post_type_archive menu-item-object-projects menu-item-687056"><a href="https://studio-jt.co.kr/projects/"><span class="menu-item-text">프로젝트</span></a></li>
+<li id="menu-item-687042" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-687042"><a href="https://studio-jt.co.kr/category/blog/"><span class="menu-item-text">제이티 이야기</span></a></li>
+<li id="menu-item-686951" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-686951"><a href="https://studio-jt.co.kr/연락처-및-오시는-길/"><span class="menu-item-text">연락처 및 오시는 길</span></a></li>
+<li id="menu-item-686954" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-686954"><a href="https://studio-jt.co.kr/프로젝트-의뢰하기/"><span class="menu-item-text">프로젝트 의뢰하기</span></a></li>
+<li id="menu-item-688650" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-688650"><a href="https://studio-jt.co.kr/입사지원/"><span class="menu-item-text">입사지원</span></a></li>
+</ul>                    </div><!-- .menu_container_inner -->
+                </nav><!-- .menu_container -->
+            </div><!-- .header_inner -->
+        </header>
+
+        <div id="barba-wrapper">
+          <div class="barba-container">
+                            <main class="main_container" data-jetpack-view="{}" data-jetpack-blog="" data-jetpack-post="">
+
+    
+        
+        <style>
+            .project_btn { background-color: #222222; border-color: #222222; }
+            .project_btn:hover { color: #222222; }
+        </style>
+
+        <div class="single_view project_view">
+            <div class="back_to_list">
+                                <a href="https://studio-jt.co.kr/projects/?postid=690405&amp;postpage=1">
+                    목록으로<br />돌아가기
+                </a>
+            </div><!-- .back_to_list -->
+
+            <div class="project_header">
+                <div class="project_header_bg" style="background-image: url(https://studio-jt.co.kr/file/2017/10/lanbelle-visual.jpg); background-color:#222222"></div>
+
+                <div class="project_header_teble">
+                    <div class="project_header_cell">
+                        <h1 class="project_header_txt">
+                            <span class="project_header_txt_01" style="color: #DDDDDD;">LANBELLE</span>
+                            <span class="project_header_txt_02" style="color: #DDDDDD;">WORDPRESS</span>
+                        </h1>
+                    </div>
+                </div><!-- .project_header_txt -->
+
+                <a href="#project_body" class="scroll_down">scroll down</a>
+            </div><!-- .project_header -->
+
+            <div class="project_body" id="project_body">
+                <div class="single_inner_wrap project_meta_wrap">
+                                        <h1>랑벨 반응형웹 구축 사례</h1>
+                    <ul class="summary">
+                                                <li>
+                            <h2>CLIENT</h2>
+                            <p>LANBELLE</p>
+                        </li>
+                                                                        <li>
+                            <h2>RELEASE DATE</h2>
+                            <p><time datetime="2017-10">2017.10</time></p>
+                        </li>
+                                                                        <li>
+                            <h2>TYPE</h2>
+                            <p>반응형웹, 다국어, CMS</p>
+                        </li>
+                                            </ul><!-- .summary -->
+
+                                        <p>프리미엄 천연 스킨케어인 랑벨의 리뉴얼 사이트는 건강한 아름다움을 전달하고자 하는 브랜드 컨셉을<br />
+가장 잘 표현할 수 있도록 제작하였습니다. <br />
+신규 브랜드로서 브랜드의 이미지를 잘 전달하고 브랜드의 철학을 잘 반영하는 구성과 구조로 <br />
+브랜드 입지를 강화하는데 목적을 두었습니다.<br />
+랑벨 공식 브랜드 홈페이지는 <strong>웹어워드 2017 화장품분야 대상, 앤어워드 2017 위너, 디자인어워즈인아시아 DESIGN OF THE DAY, AWWWARDS HONORABLE MENTION</strong>을 수상하며 국내/해외 어워드 4관왕의 영예를 안았습니다.</p>
+                    
+                                        <style>
+                        .view_btn_site { background-color: #222222; border-color: #222222; }
+                        .view_btn_site:hover { color: #222222; }
+                    </style>
+
+                    <a class="view_btn_site" href="https://www.lanbelle.com/" target="_blank">사이트 바로가기</a>
+                                    </div><!-- .meta_wrap -->
+
+                <div class="jt_project_detail">
+                    <div class="iframe_video_container"><div class="iframe_video_container_bg" style="background-image: url(/inc/uploads/2017/10/lanbelle-mac-bg-3.jpg);"></div><div class="iframe_video_wrap"><div class="iframe_video_wrap_inner" style="padding-top: 49.49%"><iframe src="https://player.vimeo.com/video/284884865?background=1" title="랑벨 홈페이지 미리보기 영상" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><div class="iframe_poster"><img src="http://studio-jt.co.kr/inc/uploads/2018/08/studiojt-lanbelle-mac-img.jpg" alt="" /></div><div class="iframe_support"><img src="http://studio-jt.co.kr/inc/uploads/2018/08/studiojt-lanbelle-mac-img.jpg" alt="" /></div></div></div></div>
+<h2>사용자 환경에 맞춰 최적화되는 반응형웹</h2>
+<p>다양한 디바이스와 해상도에 맞게 최적화되는 반응형웹으로 개발하여<br />
+여러 환경의 사용자에게 동일한 사용자경험을 제공하며, 사이트의 유지관리 효율성을 높였고<br />
+검색엔진에 친화적이게 제작되었습니다.</p>
+<img class="alignnone wp-image-690419 size-full" src="https://studio-jt.co.kr/file/2017/10/lanbelle-img01.jpg" alt="랑벨 홈페이지 디스플레이" width="1903" height="1270" srcset="https://studio-jt.co.kr/file/2017/10/lanbelle-img01.jpg 1903w, https://studio-jt.co.kr/file/2017/10/lanbelle-img01-300x200.jpg 300w, https://studio-jt.co.kr/file/2017/10/lanbelle-img01-1024x683.jpg 1024w" sizes="(max-width: 1903px) 100vw, 1903px" />
+<h2>오직 랑벨만의 아이콘 디자인</h2>
+<p>콘텐츠를 쉽게 이해할 수 있도록 랑벨 심플퍼펙션을 반영한 일러스트아이콘을 제작하였습니다.</p>
+    <style>
+                .jt_icondesign_list_0 .jt_icondesign_item {
+            width: 20%;
+            margin-top: 46px;
+        }
+
+                .jt_icondesign_list_ .jt_icondesign_item:first-child, .jt_icondesign_list_ .jt_icondesign_item:first-child + figure, .jt_icondesign_list_ .jt_icondesign_item:first-child + figure + figure, .jt_icondesign_list_ .jt_icondesign_item:first-child + figure + figure + figure, .jt_icondesign_list_ .jt_icondesign_item:first-child + figure + figure + figure + figure {margin-top: 0;}
+    </style>
+<div class="jt_icondesign_list_wrap"><div class="jt_icondesign_list jt_icondesign_list_0"><figure class="jt_icondesign_item"><img src="https://studio-jt.co.kr/file/2017/10/lanbelle-icon-01.png" alt="랑벨 아이콘 01" /></figure><figure class="jt_icondesign_item"><img src="https://studio-jt.co.kr/file/2017/10/lanbelle-icon-02.png" alt="랑벨 아이콘 02" /></figure><figure class="jt_icondesign_item"><img src="https://studio-jt.co.kr/file/2017/10/lanbelle-icon-03.png" alt="랑벨 아이콘 03" /></figure><figure class="jt_icondesign_item"><img src="https://studio-jt.co.kr/file/2017/10/lanbelle-icon-04.png" alt="랑벨 아이콘 04" /></figure><figure class="jt_icondesign_item"><img src="https://studio-jt.co.kr/file/2017/10/lanbelle-icon-05.png" alt="랑벨 아이콘 05" /></figure><figure class="jt_icondesign_item"><img src="https://studio-jt.co.kr/file/2017/10/lanbelle-icon-06.png" alt="랑벨 아이콘 06" /></figure><figure class="jt_icondesign_item"><img src="https://studio-jt.co.kr/file/2017/10/lanbelle-icon-07.png" alt="랑벨 아이콘 07" /></figure><figure class="jt_icondesign_item"><img src="https://studio-jt.co.kr/file/2017/10/lanbelle-icon-08.png" alt="랑벨 아이콘 08" /></figure><figure class="jt_icondesign_item"><img src="https://studio-jt.co.kr/file/2017/10/lanbelle-icon-09.png" alt="랑벨 아이콘 09" /></figure><figure class="jt_icondesign_item"><img src="https://studio-jt.co.kr/file/2017/10/lanbelle-icon-10.png" alt="랑벨 아이콘 10" /></figure></div></div>
+<h2>아름답고 유용하며 의미있는 디자인</h2>
+<p>메인은 고화질 비쥬얼 이미지를 사용한 풀 스크린 형태입니다. 풀 스크린 화면은<br />
+사이트의 아이덴티티를 폭발적으로 인지할 수 있게 해주며 복잡합 ui를 제거함과 동시에<br />
+긴 스크롤링 페이지로 넘어갈 분위기를 만들어 줍니다.<br />
+전체적인 톤&amp;매너는 프리미엄 친환경 사이트로 내추럴한 느낌과 고급스러운 느낌을 가미하고자 하였습니다.<br />
+그리드를 깨고 비대칭을 활용한 레이아웃을 사용한 디자인은 기존의 화장품의 틀을 깬다는 의미로써<br />
+남다른 사고와 남다른 시각으로 새로운 화장품을 생각해내는 랑벨의 비전을 표현합니다.</p>
+<img class="alignnone wp-image-690420 size-full" src="https://studio-jt.co.kr/file/2017/10/lanbelle-img02.jpg" alt="랑벨 캡쳐" width="1903" height="2299" srcset="https://studio-jt.co.kr/file/2017/10/lanbelle-img02.jpg 1903w, https://studio-jt.co.kr/file/2017/10/lanbelle-img02-248x300.jpg 248w, https://studio-jt.co.kr/file/2017/10/lanbelle-img02-1024x1237.jpg 1024w" sizes="(max-width: 1903px) 100vw, 1903px" />
+<img class="alignnone wp-image-690421 size-full" src="https://studio-jt.co.kr/file/2017/10/lanbelle-img03.jpg" alt="랑벨 모바일" width="1400" height="889" srcset="https://studio-jt.co.kr/file/2017/10/lanbelle-img03.jpg 1400w, https://studio-jt.co.kr/file/2017/10/lanbelle-img03-300x191.jpg 300w, https://studio-jt.co.kr/file/2017/10/lanbelle-img03-1024x650.jpg 1024w" sizes="(max-width: 1400px) 100vw, 1400px" />
+<h2>404 에러페이지 디자인</h2>
+<p>브라우저 기본 404페이지는 지루하고 도움이 되지 않습니다.<br />
+맞춤 제작 404페이지로 에러페이지에 대한 방문자의 스트레스와 이탈률을 줄였습니다.</p>
+<img class="alignnone wp-image-690423 size-full" src="https://studio-jt.co.kr/file/2017/10/lanbelle-404.jpg" alt="랑벨 404페이지" width="1400" height="681" srcset="https://studio-jt.co.kr/file/2017/10/lanbelle-404.jpg 1400w, https://studio-jt.co.kr/file/2017/10/lanbelle-404-300x146.jpg 300w, https://studio-jt.co.kr/file/2017/10/lanbelle-404-1024x498.jpg 1024w" sizes="(max-width: 1400px) 100vw, 1400px" />
+                </div><!-- .jt_project_detail -->
+
+                
+                <div class="wrap project_awards">
+                    <div class="single_inner_wrap">
+                        <h2>어워드 수상내역</h2>
+                                                <p>WEB AWARD KOREA : 2017 / 화장품 분야 대상</p>
+                                                <p>DESIGNAWARDS in ASIA : 5 December 2017 / DESIGN OF THE DAY</p>
+                                                <p>&AWARD : 2017 / Beauty / WINNER</p>
+                                                <p>AWWWARDS : 15 JANUARY 2018 / HONORABLE MENTION</p>
+                                            </div>
+
+                    <div class="award_card">
+                        <ul class="award_card_list">
+                                                                                        <li class="award_card_item" style="background-image:url(https://studio-jt.co.kr/file/2017/02/award-card-webaward-bg.jpg);">
+                                <div class="award_card_item_inner">
+                                    <p class="award_card_year">2017</p>
+
+                                                                        <img src="https://studio-jt.co.kr/file/2017/02/award-card-webaward-icon.png" alt="WEB AWARD KOREA" />
+                                    
+                                    <div class="award_card_desc">
+                                        <span class="award_card_category">WEB AWARD KOREA</span>
+                                        <span class="award_card_grade">화장품분야 대상</span>
+                                    </div><!-- .award_card_desc -->
+                                </div>
+                            </li>
+                                                                                        <li class="award_card_item" style="background-image:url(https://studio-jt.co.kr/file/2017/02/award-card-webaward-bg.jpg);">
+                                <div class="award_card_item_inner">
+                                    <p class="award_card_year">2017</p>
+
+                                                                        <img src="https://studio-jt.co.kr/file/2017/03/studiojt-daa-logo.png" alt="DESIGNAWARDS. ASIA" />
+                                    
+                                    <div class="award_card_desc">
+                                        <span class="award_card_category">DESIGNAWARDS. ASIA</span>
+                                        <span class="award_card_grade">DESIGN OF THE DAY</span>
+                                    </div><!-- .award_card_desc -->
+                                </div>
+                            </li>
+                                                                                        <li class="award_card_item" style="background-image:url(https://studio-jt.co.kr/file/2017/02/award-card-webaward-bg.jpg);">
+                                <div class="award_card_item_inner">
+                                    <p class="award_card_year">2017</p>
+
+                                                                        <img src="https://studio-jt.co.kr/file/2017/02/award-card-award-icon.png" alt="&AWARD" />
+                                    
+                                    <div class="award_card_desc">
+                                        <span class="award_card_category">&AWARD</span>
+                                        <span class="award_card_grade">WINNER</span>
+                                    </div><!-- .award_card_desc -->
+                                </div>
+                            </li>
+                                                                                        <li class="award_card_item" style="background-image:url(https://studio-jt.co.kr/file/2017/02/award-card-webaward-bg.jpg);">
+                                <div class="award_card_item_inner">
+                                    <p class="award_card_year">2018</p>
+
+                                                                        <img src="https://studio-jt.co.kr/file/2017/02/awwwards.png" alt="AWWWARDS" />
+                                    
+                                    <div class="award_card_desc">
+                                        <span class="award_card_category">AWWWARDS</span>
+                                        <span class="award_card_grade">HONORABLE MENTION</span>
+                                    </div><!-- .award_card_desc -->
+                                </div>
+                            </li>
+                                                    </ul>
+                    </div><!-- .project_award_card -->
+                </div><!-- .single_inner_wrap -->
+
+                
+                <div class="single_inner_wrap project_team">
+                    <h2>만든 사람들</h2>
+                    <ul class="member_list">
+                                    <li>
+                <img src="https://studio-jt.co.kr/file/2017/10/youngil-1.jpg" alt="이영일"  />                <div class="member_name">
+                    <div class="member_name_table">
+                        <div class="member_name_table_cell">
+                            <p>이영일</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+                    <li>
+                <img src="https://studio-jt.co.kr/file/2017/03/jaechul-1.jpg" alt="정재철"  />                <div class="member_name">
+                    <div class="member_name_table">
+                        <div class="member_name_table_cell">
+                            <p>정재철</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+                    <li>
+                <img src="https://studio-jt.co.kr/file/2017/03/jisoo-1.jpg" alt="이지수"  />                <div class="member_name">
+                    <div class="member_name_table">
+                        <div class="member_name_table_cell">
+                            <p>이지수</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+                    <li>
+                <img src="https://studio-jt.co.kr/file/2017/03/minseo-1.jpg" alt="김민서"  />                <div class="member_name">
+                    <div class="member_name_table">
+                        <div class="member_name_table_cell">
+                            <p>김민서</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+                    <li>
+                <img src="https://studio-jt.co.kr/file/2017/03/nicola-1.jpg" alt="쇼베 니콜라"  />                <div class="member_name">
+                    <div class="member_name_table">
+                        <div class="member_name_table_cell">
+                            <p>쇼베 니콜라</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+                    <li>
+                <img src="https://studio-jt.co.kr/file/2017/03/dawoon-1.jpg" alt="정다운"  />                <div class="member_name">
+                    <div class="member_name_table">
+                        <div class="member_name_table_cell">
+                            <p>정다운</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+                            </ul>
+
+                            			<div class="jt_tag">
+        				<span>Tag</span>
+        				<nav>
+        					<ul>
+        					<li><a href="https://studio-jt.co.kr/tag/full-ssl/">#Full SSL</a></li><li><a href="https://studio-jt.co.kr/tag/http2/">#HTTP/2</a></li><li><a href="https://studio-jt.co.kr/tag/검색엔진최적화/">#검색엔진최적화</a></li><li><a href="https://studio-jt.co.kr/tag/맞춤테마/">#맞춤테마</a></li><li><a href="https://studio-jt.co.kr/tag/반응형웹/">#반응형웹</a></li><li><a href="https://studio-jt.co.kr/tag/워드프레스/">#워드프레스</a></li><li><a href="https://studio-jt.co.kr/tag/일러스트/">#일러스트</a></li>        					</ul>
+        				</nav>
+        			</div><!-- .jt_tag -->
+			                        </div><!-- .single_inner_wrap -->
+
+                
+                <div class="single_sticky_nav" id="single_sticky_nav">
+                    <div class="wrap">
+                        <div class="single_sticky_nav_inner">
+
+                            <nav class="single_sticky_nav_menu">
+                                                                <a class="single_sticky_nav_menu_anchor single_sticky_nav_menu_anchor_main" href="https://www.lanbelle.com/" target="_blank">
+                                    <span class="single_sticky_nav_pagenation_text">사이트 바로가기</span>
+                                    <i class="icon-enter"></i>
+                                </a>
+                                                                <span class="single_sticky_nav_menu_anchor single_sticky_nav_menu_anchor_share">
+                                    <span class="single_sticky_nav_pagenation_text">공유하기</span>
+                                    <i class="icon-share"></i>
+                                            					<span class="single_sticky_nav_menu_share">
+				<a target="_blank" class="single_sticky_nav_menu_share_anchor icon-facebook" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fstudio-jt.co.kr%2F%3Fp%3D690405">facebook</a>
+				<a target="_blank" class="single_sticky_nav_menu_share_anchor icon-google" href="https://plus.google.com/share?url=https%3A%2F%2Fstudio-jt.co.kr%2F%3Fp%3D690405">google</a>
+				<a target="_blank" class="single_sticky_nav_menu_share_anchor icon-twitter" href="http://twitter.com/share?url=https%3A%2F%2Fstudio-jt.co.kr%2F%3Fp%3D690405&amp;text=%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4%20%EC%A0%9C%EC%9D%B4%ED%8B%B0-%EB%9E%91%EB%B2%A8%20%EB%B0%98%EC%9D%91%ED%98%95%EC%9B%B9%20%EA%B5%AC%EC%B6%95%20%EC%82%AC%EB%A1%80">twitter</a>
+				<a target="_blank" class="single_sticky_nav_menu_share_anchor icon-pinterest" href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fstudio-jt.co.kr%2Fprojects%2F%EB%9E%91%EB%B2%A8-%EB%B0%98%EC%9D%91%ED%98%95%EC%9B%B9-%EA%B5%AC%EC%B6%95-%EC%82%AC%EB%A1%80%2F&media=&description=%EB%9E%91%EB%B2%A8+%EB%B0%98%EC%9D%91%ED%98%95%EC%9B%B9+%EA%B5%AC%EC%B6%95+%EC%82%AC%EB%A1%80">pinterest</a>
+			</span><!-- .single_sticky_nav_menu_share -->
+			
+        
+                                </span>
+                                <a class="single_sticky_nav_menu_anchor single_sticky_nav_menu_anchor_request no-barba" href="https://studio-jt.co.kr/프로젝트-의뢰하기/">
+                                    <span class="single_sticky_nav_pagenation_text">프로젝트 의뢰하기</span>
+                                    <i class="icon-project"></i>
+                                </a>
+                            </nav>
+
+                            <nav class="single_sticky_nav_pagenation">
+                                <a class="single_sticky_nav_pagenation_anchor single_sticky_nav_pagenation_anchor_prev" href="https://studio-jt.co.kr/projects/mr-kong/" title="이전 페이지">
+                                    <span class="single_sticky_nav_pagenation_text">PREV</span>
+                                    <i class="icon-arrow icon-arrow-left"></i>
+                                </a>
+                                <a class="single_sticky_nav_pagenation_anchor single_sticky_nav_pagenation_anchor_current" href="https://studio-jt.co.kr/projects/?postid=690405&amp;postpage=1" title="목록 페이지">
+                                    <span class="single_sticky_nav_pagenation_anchor_text single_sticky_nav_pagenation_anchor_text_current">LIST</span>
+                                    <div class="single_sticky_nav_pagenation_anchor_line_wrap">
+                                        <span class="single_sticky_nav_pagenation_anchor_line single_sticky_nav_pagenation_anchor_line_01"></span>
+                                        <span class="single_sticky_nav_pagenation_anchor_line single_sticky_nav_pagenation_anchor_line_02"></span>
+                                        <span class="single_sticky_nav_pagenation_anchor_line single_sticky_nav_pagenation_anchor_line_03"></span>
+                                    </div>
+                                </a>
+                                <a class="single_sticky_nav_pagenation_anchor single_sticky_nav_pagenation_anchor_next" href="https://studio-jt.co.kr/projects/한국알콜산업-반응형웹-구축-사례/" title="다음 페이지">
+                                    <span class="single_sticky_nav_pagenation_text">NEXT</span>
+                                    <i class="icon-arrow icon-arrow-right"></i>
+                                </a>
+                            </nav>
+
+                        </div><!-- .single_sticky_nav_inner -->
+                    </div><!-- .wrap -->
+                </div><!-- .single_sticky_nav -->
+
+                <div class="wrap">
+                    <div class="project_nav_inner">
+                        <a href="https://studio-jt.co.kr/projects/mr-kong/" class="project_nav_prev">
+                            <div class="bg_wrap" style="background-image:url(https://studio-jt.co.kr/file/2017/02/studio-jt-mr.kong-branding-projectnavigation-02.jpg)"></div>
+                            <div class="bg_color_wrap"></div>
+                            <div class="project_nav_info">
+                                <p class="project_nav">
+                                    <span>PREV</span>
+                                    <span>PROJECT</span>
+                                </p>
+                                <p class="page_name">MR.KONG BRANDING</p>
+                            </div>
+                        </a><!-- .project_nav_prev -->
+
+                        <div class="project_list">
+                                                        <a class="project_nav_list" href="https://studio-jt.co.kr/projects/?postid=690405&amp;postpage=1" title="목록 페이지">
+							    <span class="hidden">목록으로 가기</span>
+                                <span class="list_line list_line_01"></span>
+                                <span class="list_line list_line_02"></span>
+                                <span class="list_line list_line_03"></span>
+                            </a>
+                        </div><!-- .project_list -->
+
+                        <a href="https://studio-jt.co.kr/projects/한국알콜산업-반응형웹-구축-사례/" class="project_nav_next">
+                            <div class="bg_wrap" style="background-image:url(https://studio-jt.co.kr/file/2018/03/studiojt_kai_700x226.jpg)"></div>
+                            <div class="bg_color_wrap"></div>
+                            <div class="project_nav_info">
+                                <p class="project_nav">
+                                    <span>NEXT</span>
+                                    <span>PROJECT</span>
+                                </p>
+                                <p class="page_name">KAI</p>
+                            </div>
+                        </a><!-- .project_nav_next -->
+                    </div><!-- .project_nav_inner -->
+                </div><!-- .wrap -->
+            </div><!-- .project_body -->
+        </div><!-- .project_view -->
+
+    
+				</main><!-- .main_container -->
+            </div> <!-- #barba-container -->
+        </div><!-- #barba-wrapper -->
+
+        <footer id="footer">
+			
+			<div class="footer_inner wrap">
+				<div class="footer_info">
+					<ul class="footer_link">
+						<li class="link_as"><a href="http://help.studio-jt.co.kr/" target="_blank">A/S신청</a></li>
+						<li class="link_contact"><a class="no-barba" id="anchor_request_footer" href="https://studio-jt.co.kr/프로젝트-의뢰하기/">프로젝트 의뢰하기</a></li>
+					</ul><!-- .footer_link -->
+
+					<ul class="footer_addr">
+						<li class="addr_busan">
+							<strong>BUSAN OFFICE</strong>
+							<p>부산 해운대구 센텀중앙로 97 <br />센텀스카이비즈 A동 1602호, 1603호 <br class="footer_addr_small_show" />070-7566-1981</p>
+							<a target="_blank" href="https://www.google.co.kr/maps/place/%EC%84%BC%ED%85%80+%EC%8A%A4%EC%B9%B4%EC%9D%B4+%EB%B9%84%EC%A6%88%E2%94%82Centum+Sky+BIZ/@35.1751408,129.1226914,17z/data=!4m8!1m2!2m1!1z7IS87YWA7Iqk7Lm07J2067mE7KaI!3m4!1s0x0:0x8cdf1e68dea77e41!8m2!3d35.1750328!4d129.1249182">지도보기</a>
+						</li>
+						<li class="addr_seoul">
+							<strong>SEOUL BRANCH</strong>
+							<p>서울특별시 마포구<br /> 서교동 379-13 4층</p>
+							<a target="_blank" href="https://www.google.co.kr/maps/place/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EB%A7%88%ED%8F%AC%EA%B5%AC+%ED%99%8D%EC%9D%B5%EB%A1%9C5%EA%B8%B8+59/@37.5525092,126.9194407,18z/data=!4m5!3m4!1s0x357c98dafb83a68b:0xce673b5494e3dea6!8m2!3d37.5527049!4d126.9196606">지도보기</a>
+						</li>
+					</ul><!-- .footer_addr -->
+				</div><!-- .footer_info -->
+
+				<div class="footer_social">
+					<ul class="footer_social_list" itemscope="" itemtype="http://schema.org/Organization">
+						<li class="footer_social_listitem footer_instagram"><a itemprop="sameAs" class="footer_social_listitem_anchor footer_social_listitem_anchor_instagram" target="_blank" href="https://www.instagram.com/studio_jt/">instagram</a></li>
+						<li class="footer_social_listitem footer_facebook"><a itemprop="sameAs" class="footer_social_listitem_anchor footer_social_listitem_anchor_facebook" target="_blank" href="https://www.facebook.com/StudioJtPage">facebook</a></li>
+						<li class="footer_social_listitem footer_pinterest"><a itemprop="sameAs" class="footer_social_listitem_anchor footer_social_listitem_anchor_pinterest" target="_blank" href="https://www.pinterest.com/padakjt/studio-jt/">pinterest</a></li>
+					</ul>
+                    <iframe class="footer_fb_like" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FStudioJtPage&width=95&layout=button_count&action=like&size=small&show_faces=false&share=false&height=21&appId" width="95" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+				</div><!-- .footer_social-->
+
+				<p class="footer_copy"><span>COPYRIGHT 2012-2018 STUDIO-JT.</span> <span>ALL RIGHTS RESERVED.</span></p>
+			</div><!-- .footer_inner -->
+		</footer>
+
+	</div><!-- .global_container -->
+
+    <div id="mask_01" class="mask_outer">
+		<div class="mask_inner">
+			<img class="mask_wave" src="https://studio-jt.co.kr/skin/images/layout/screen-wave-primary.png" alt="primary mask" />
+			<div class="mask_box"></div>
+		</div>
+	</div>
+
+	<div id="mask_02" class="mask_outer">
+		<div class="mask_inner">
+			<img class="mask_wave" src="https://studio-jt.co.kr/skin/images/layout/screen-wave-secondary.png" alt="secondary mask" />
+			<div class="mask_box"></div>
+		</div>
+	</div>
+
+    <div id="superman">
+        <img id="superman_loading" src="https://studio-jt.co.kr/skin/images/layout/superman-loading.png" alt="Loading" />
+        <img id="superman_01" src="https://studio-jt.co.kr/skin/images/layout/superman-01.png" alt="슈퍼맨 로딩중" />
+        <img id="superman_02" src="https://studio-jt.co.kr/skin/images/layout/superman-02.png" alt="슈퍼맨 로딩완료" />
+    </div>
+
+    <script type='text/javascript'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"http-jtdev-cafe24-com"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://studio-jt.co.kr/mod/08740a55/public/js/comment_count.js?ver=3.0.16'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/barba.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/video/player.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/jquery/jquery.raf.min.js?ver=0.1.2'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/jt-liquid.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/jquery/jquery.easing.1.3.js?ver=1.3'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/greensock/TweenMax.min.js?ver=1.18.2'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/greensock/DrawSVGPlugin.min.js?ver=0.1.2'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/MorphSVGPlugin.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/popup/jquery.magnific-popup.min.js?ver=1.1.0'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/slider/slick/slick.min.js?ver=1.6.0'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/slider/cycle2/jquery.cycle2.min.js?ver=2.1.6'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/lib/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/isotope/isotope.pkgd.min.js?ver=2.2.2'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/isotope/masonryImagesReveal.js?ver=3.1.8'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/icheck/icheck.min.js?ver=1.0.2'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/file/jquery.customFile_jt-custom.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/select/jquery.selectric.js?ver=1.10.1'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/scroll/jquery.nicescroll.min.js?ver=3.6.8'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/waypoints/jquery.waypoints.min.js?ver=4.0.0'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/waypoints/inview.min.js?ver=4.0.0'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/spidoche/jquery.spidocheSVG.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/vendors/spidoche/spidocheScaler.min.js?ver=1.2.3'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/jt-strap.js?ver=1.3.28'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/main.js?ver=1.3.28'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/sub-bin.js?ver=1.3.28'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/sub-kms.js?ver=1.3.28'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/sub-jun.js?ver=1.3.28'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/sub-sumi.js?ver=1.3.28'></script>
+<script type='text/javascript' src='https://studio-jt.co.kr/skin/js/console.js'></script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-64116830-7', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+</body>
+</html>
