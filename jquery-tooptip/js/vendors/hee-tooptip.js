@@ -1,6 +1,6 @@
 (function($){
  
-  $.fn.hee_tooltip = function(options){
+    $.fn.hee_tooltip = function(options){
      
     //Set the option
     var settings = $.extend({
