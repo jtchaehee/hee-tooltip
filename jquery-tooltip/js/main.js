@@ -16,7 +16,7 @@ hee_tooltip();
 
 function hee_tooltip(){
 
-    $('.my_tooltip').hee_tooltip({
+    $('.my_tooltip.custom').hee_tooltip({
         backgroundColor: '#e9e9e9',
         color: '#0b21ee'
     });
